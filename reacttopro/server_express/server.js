@@ -60,6 +60,12 @@ app.get('/user/:id', function (req, res, next) {
     res.json({success : 'special'}) 
   });
 
+  app.get('/user2/:id', function (req, res, next) {
+    // res.render('special')
+    // res.send('special') 
+    res.json({success : 'special'}) 
+  });
+
 app.listen(8001,()=>{
     console.log('Ready on http://localhost:8001')
 });
